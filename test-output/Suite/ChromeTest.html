@@ -1,0 +1,2196 @@
+<html>
+<head>
+<title>TestNG:  ChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/57</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 15 11:00:36 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17294 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Master </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.setUp()'><b>setUp</b><br>Test class: TestCases.LoanTenureCalculatorUICheck<br>Parameters: Windows, chrome</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1550228904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1550228904'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.tearDown()'><b>tearDown</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyEmiCalculatorLoanAmountInputFieldPresence()'><b>verifyEmiCalculatorLoanAmountInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.verifyEmiCalculatorLoanAmountInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1878677242", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1878677242'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.verifyEmiCalculatorLoanAmountInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateEmiCalculatorLoanTenureMonthButton()'><b>validateEmiCalculatorLoanTenureMonthButton</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLoanTenureMonthButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33510911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33510911'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLoanTenureMonthButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateInterestRateInputField()'><b>validateInterestRateInputField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateInterestRateInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2085952212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2085952212'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateInterestRateInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.readData()'><b>readData</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.readData() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1142402835", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1142402835'><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.readData() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanTenureInputField()'><b>validateLoanTenureInputField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanTenureInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1431099210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1431099210'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanTenureInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanInsuranceInputField()'><b>validateLoanInsuranceInputField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanInsuranceInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2138765681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2138765681'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanInsuranceInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.printAllTheData()'><b>printAllTheData</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.printAllTheData() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641931089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1641931089'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.printAllTheData() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.clickOnyear()'><b>clickOnyear</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.clickOnyear() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172450799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172450799'><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.clickOnyear() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanAmountInterestRateInputFieldByPassingValue()'><b>validateLoanAmountInterestRateInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.validateLoanAmountInterestRateInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1003737182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1003737182'><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.validateLoanAmountInterestRateInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanAmountLoanTenureMonthButton()'><b>validateLoanAmountLoanTenureMonthButton</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.validateLoanAmountLoanTenureMonthButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace717998169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace717998169'><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.validateLoanAmountLoanTenureMonthButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink()'><b>validateLoanTenureCalculatorLink</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace777970377", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace777970377'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanAmountCalculatorLink()'><b>validateLoanAmountCalculatorLink</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1715657818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1715657818'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.setLoanTenure()'><b>setLoanTenure</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.setLoanTenure() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace750797656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace750797656'><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.setLoanTenure() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanAmountLoanChargesInputFieldByPassingValue()'><b>validateLoanAmountLoanChargesInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.validateLoanAmountLoanChargesInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2060432982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2060432982'><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.validateLoanAmountLoanChargesInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyLoanTenureEmiInputFieldPresence()'><b>verifyLoanTenureEmiInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.verifyLoanTenureEmiInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1389055824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1389055824'><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.verifyLoanTenureEmiInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanTenureLoanAmountInputFieldByPassingValue()'><b>validateLoanTenureLoanAmountInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.validateLoanTenureLoanAmountInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace337029130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace337029130'><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.validateLoanTenureLoanAmountInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.setCarAmount()'><b>setCarAmount</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.setCarAmount() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace775911842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace775911842'><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.setCarAmount() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanStartMonthAndYearInputField()'><b>validateLoanStartMonthAndYearInputField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanStartMonthAndYearInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace665419272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace665419272'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanStartMonthAndYearInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanTenureMonthsButton()'><b>validateLoanTenureMonthsButton</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanTenureMonthsButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1664757401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1664757401'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanTenureMonthsButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.setInterestRate()'><b>setInterestRate</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.setInterestRate() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1733903473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1733903473'><pre>java.lang.Throwable: Method TestCases.CarLoanEMI.setInterestRate() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CarLoanEMI.clickOnCarLoanLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanChargesRupeesButtonElement()'><b>validateLoanChargesRupeesButtonElement</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanChargesRupeesButtonElement() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1761495255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1761495255'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanChargesRupeesButtonElement() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyLoanAmountTenureInputFieldPresence()'><b>verifyLoanAmountTenureInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyLoanAmountTenureInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace102577332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace102577332'><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyLoanAmountTenureInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyEmiCalculatorInterestRateInputFieldPresence()'><b>verifyEmiCalculatorInterestRateInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.verifyEmiCalculatorInterestRateInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1318313145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1318313145'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.verifyEmiCalculatorInterestRateInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanChargesInputField()'><b>validateLoanChargesInputField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanChargesInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace95964948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace95964948'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanChargesInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateDownPaymentInputFieldInPercentage()'><b>validateDownPaymentInputFieldInPercentage</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateDownPaymentInputFieldInPercentage() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace157971930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace157971930'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateDownPaymentInputFieldInPercentage() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.calculatorsDropDownValidationFromHomeLoan()'><b>calculatorsDropDownValidationFromHomeLoan</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace187019413", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace187019413'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validatePropertyTaxesPerYearInputField()'><b>validatePropertyTaxesPerYearInputField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validatePropertyTaxesPerYearInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5248993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5248993'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validatePropertyTaxesPerYearInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateHomeValueInputfield()'><b>validateHomeValueInputfield</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateHomeValueInputfield() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1121401953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1121401953'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateHomeValueInputfield() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyLoanTenureLoanAmountInputFieldPresence()'><b>verifyLoanTenureLoanAmountInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.verifyLoanTenureLoanAmountInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1258103238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1258103238'><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.verifyLoanTenureLoanAmountInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateEmiCalculatorInterestRateInputFieldByPassingValue()'><b>validateEmiCalculatorInterestRateInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorInterestRateInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace77811359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace77811359'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorInterestRateInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyEmiInputFieldByPassingValue()'><b>verifyEmiInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyEmiInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1356419559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1356419559'><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyEmiInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.homeLoanEmiCalculatorValidation()'><b>homeLoanEmiCalculatorValidation</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1481731217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1481731217'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.emiCalculatorPageValidation()'><b>emiCalculatorPageValidation</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.EMICalculator.emiCalculatorPageValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.EMICalculator.calculatorsDropDownValidationFromHomeLoan() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1505964934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1505964934'><pre>java.lang.Throwable: Method TestCases.EMICalculator.emiCalculatorPageValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.EMICalculator.calculatorsDropDownValidationFromHomeLoan() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateHomeInsurancePerYearInputField()'><b>validateHomeInsurancePerYearInputField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateHomeInsurancePerYearInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2128169374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2128169374'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateHomeInsurancePerYearInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyEmiInputFieldPresence()'><b>verifyEmiInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyEmiInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace344751179", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace344751179'><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyEmiInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyLoanAmountLoanChargesInputFieldPresence()'><b>verifyLoanAmountLoanChargesInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyLoanAmountLoanChargesInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace745205026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace745205026'><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyLoanAmountLoanChargesInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.clickOnCarLoanLink()'><b>clickOnCarLoanLink</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace969014795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace969014795'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.calculatorsDropDownValidation()'><b>calculatorsDropDownValidation</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace566698125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace566698125'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 118
+Current browser version is 120.0.6099.130 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: &apos;LTIN217963&apos;, ip: &apos;10.203.178.234&apos;
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:164)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:52)
+	at TestBase.BaseClass.setUp(BaseClass.java:79)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateOneTimeExpensesRupeesButton()'><b>validateOneTimeExpensesRupeesButton</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateOneTimeExpensesRupeesButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1372483461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1372483461'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateOneTimeExpensesRupeesButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateEmiCalculatorLoanAmountInputFieldByPassingValue()'><b>validateEmiCalculatorLoanAmountInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLoanAmountInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1954355506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1954355506'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLoanAmountInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyLoanTenureInterestRateInputFieldPresence()'><b>verifyLoanTenureInterestRateInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.verifyLoanTenureInterestRateInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace80903581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace80903581'><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.verifyLoanTenureInterestRateInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanTenureLoanChargesInputFieldByValue()'><b>validateLoanTenureLoanChargesInputFieldByValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.validateLoanTenureLoanChargesInputFieldByValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2136911375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2136911375'><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.validateLoanTenureLoanChargesInputFieldByValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateHomeInsurancePerYearRupeesButton()'><b>validateHomeInsurancePerYearRupeesButton</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateHomeInsurancePerYearRupeesButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1529303412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1529303412'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateHomeInsurancePerYearRupeesButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateMaintenanceExpensesPerMonthInputField()'><b>validateMaintenanceExpensesPerMonthInputField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateMaintenanceExpensesPerMonthInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace609116570", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace609116570'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateMaintenanceExpensesPerMonthInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanStartMonthAndYearField()'><b>validateLoanStartMonthAndYearField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanStartMonthAndYearField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1880869198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1880869198'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateLoanStartMonthAndYearField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyLoanAmountInterestRateInputFieldPresence()'><b>verifyLoanAmountInterestRateInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyLoanAmountInterestRateInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1320443884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1320443884'><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.verifyLoanAmountInterestRateInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validatePropertyTaxesPerYearRupeesButton()'><b>validatePropertyTaxesPerYearRupeesButton</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validatePropertyTaxesPerYearRupeesButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1193710204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1193710204'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validatePropertyTaxesPerYearRupeesButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateEmiCalculatorLoanTenureInputFieldByPassingValue()'><b>validateEmiCalculatorLoanTenureInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLoanTenureInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1648387359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648387359'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLoanTenureInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateEmiCalculatorLoanChargesInputFieldByPassingValue()'><b>validateEmiCalculatorLoanChargesInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLoanChargesInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace704894556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace704894556'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLoanChargesInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanTenureInterestRateInputFieldByPassingValue()'><b>validateLoanTenureInterestRateInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.validateLoanTenureInterestRateInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace541135648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace541135648'><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.validateLoanTenureInterestRateInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyEmiCalculatorLoanTenureInputFieldPresence()'><b>verifyEmiCalculatorLoanTenureInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.verifyEmiCalculatorLoanTenureInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1069571746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1069571746'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.verifyEmiCalculatorLoanTenureInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateDownPaymentRupeesButton()'><b>validateDownPaymentRupeesButton</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateDownPaymentRupeesButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438874950", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438874950'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateDownPaymentRupeesButton() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateLoanAmountTenureInputFieldByPassingValue()'><b>validateLoanAmountTenureInputFieldByPassingValue</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.validateLoanAmountTenureInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2113367449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2113367449'><pre>java.lang.Throwable: Method TestCases.LoanAmountCalculatorUICheck.validateLoanAmountTenureInputFieldByPassingValue() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanAmountCalculatorUICheck.validateLoanAmountCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyEmiCalculatorLoanChargesInputFieldPresence()'><b>verifyEmiCalculatorLoanChargesInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.verifyEmiCalculatorLoanChargesInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1419166053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1419166053'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.verifyEmiCalculatorLoanChargesInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateEmiCalculatorLink()'><b>validateEmiCalculatorLink</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.EMICalculator.emiCalculatorPageValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1906128360", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1906128360'><pre>java.lang.Throwable: Method TestCases.CalculateEmiUICheck.validateEmiCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.EMICalculator.emiCalculatorPageValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.verifyLoanTenuteLoanChargesInputFieldPresence()'><b>verifyLoanTenuteLoanChargesInputFieldPresence</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.verifyLoanTenuteLoanChargesInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1014508942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1014508942'><pre>java.lang.Throwable: Method TestCases.LoanTenureCalculatorUICheck.verifyLoanTenuteLoanChargesInputFieldPresence() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.LoanTenureCalculatorUICheck.validateLoanTenureCalculatorLink() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+<tr>
+<td title='TestCases.LoanTenureCalculatorUICheck.validateOneTimeExpensesInputField()'><b>validateOneTimeExpensesInputField</b><br>Test class: TestCases.LoanTenureCalculatorUICheck</td>
+<td><div><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateOneTimeExpensesInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1494794848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1494794848'><pre>java.lang.Throwable: Method TestCases.HomeLoanEMI.validateOneTimeExpensesInputField() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a depends on not successfully finished methods 
+[TestCases.HomeLoanEMI.homeLoanEmiCalculatorValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a
+TestCases.HomeLoanEMI.calculatorsDropDownValidation() on instance TestCases.LoanTenureCalculatorUICheck@7bedc48a]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.LoanTenureCalculatorUICheck@7bedc48a</td></tr>
+</table><p>
+</body>
+</html>
