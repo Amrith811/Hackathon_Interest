@@ -1,3 +1,10 @@
-12:05:57.631 [main] INFO  org.testng.annotations.Test - ****** finished TC_056 Loan Tenure Loan Charges Input Field ******
-12:05:58.318 [main] INFO  org.testng.annotations.Test - ****** Starting TC_57 Loan Tenure Loan Charges Input Field ******
-12:05:58.968 [main] INFO  org.testng.annotations.Test - ****** finished TC_057 Loan Tenure Loan Charges Input Field ******
+17:07:52.199 [main] INFO  org.testng.annotations.Test - Entering data into Loan Charges Input Field
+17:07:57.008 [main] INFO  org.testng.annotations.Test - ****** finished TC_016 Loan Charges Input Field ******
+17:07:57.622 [main] INFO  org.testng.annotations.Test - ****** Starting TC_017 Loan Charges Rupees Button ******
+17:07:57.623 [main] INFO  org.testng.annotations.Test - Clicking on the Loan Charges Rupees Button
+17:07:58.521 [main] INFO  org.testng.annotations.Test - ****** finished TC_017 Loan Charges Rupees Button ******
+17:07:59.145 [main] INFO  org.testng.annotations.Test - ****** Starting TC_018 Loan Start Month And Year Input Field ******
+17:07:59.152 [main] INFO  org.testng.annotations.Test - Clicking on Loan Start Month and Year Input Field
+17:07:59.675 [main] INFO  org.testng.annotations.Test - ****** finished TC_018 Loan Start Month And Year Input Field******
+17:08:01.426 [main] INFO  org.testng.annotations.Test - ****** Starting TC_019 Loan Start Month And Year Input Field ******
+17:08:01.426 [main] INFO  org.testng.annotations.Test - Entering data into Loan Start Month and Year Input Field
